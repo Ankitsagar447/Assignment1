@@ -1,0 +1,84 @@
+package com.assignment1.com;
+
+import java.util.Scanner;
+
+public class arrayAssignment {
+	
+	//Declare and create an array, method of array , count of array , display count
+	
+	public void arraymethod(int i) {
+		
+		 	int arr[]= new int [i];
+		 
+		 	for( i = 0; i < arr.length; i++) {
+		 		
+		 		int count = i;
+		 		System.out.println("arr["+i+"]");
+		 		
+		 		System.out.println("\t");
+		 		System.out.println("count :"+ ++count);
+		 		
+		 	}
+		 		
+}
+	
+	//Create an array of characters
+	
+	public void arraymethodchar(int j) {
+	 	String char1[]= new String [j];
+	 	
+	 	for( j = 0; j < char1.length; j++) {
+	 		
+	 		//int count = j;
+	 		System.out.println("Enter the char1["+j+"]"+":");
+	 		Scanner sc = new Scanner(System.in); 
+			String cha = sc .nextLine();
+			System.out.println(cha);
+	 		
+	 		
+	 		}
+	 }
+	
+	//Create lowercase letters randomly and assign 
+	// can't able to do sorry for this i  will practice for this problem 
+	public void randomchar(int fromchar , int tochar) 
+	{
+		
+	System.out.println(fromchar+1+fromchar+97 );	
+		
+		
+		
+	}
+	
+	//Display the array of characters , count of character
+	
+	public void arraychar() {
+		
+		
+		for( int chara = 0; chara < 20 ; chara++) {
+			
+			System.out.println("char = char"+chara);
+			
+			}
+		
+		}
+	
+
+
+	
+	
+	public static void main(String []args) {
+			
+			//Scanner sc = new Scanner(System.in);
+			arrayAssignment obj = new arrayAssignment();
+			obj.arraymethod(6);
+			obj.arraymethodchar(4);
+			obj.randomchar(1,9);
+			obj.arraychar();
+			
+			
+			
+			
+		}
+}
+	
